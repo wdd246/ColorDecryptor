@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <center>
+            <h4 class="display-2">Code by <b>#<font style='color:#f00'>r</font><font style='color:#0f0'>g</font><font style='color:#00f'>b</font></b> color</h4><br>
+            <p>by Adam Małota <a href="www.mansio.pl">mansio.pl</a></p>
+        </center>
+        <br>
+        <div class="form-group">
+            <label>Encrypt some text</label>
+            <input type="text" id="input" class="form-control" placeholder="Encrypt something...">
+            <small class="form-text text-muted">Insert some text ...</small><br>
+            <label>Insert key between 100-850</label>
+            <input type="number" id="keyin" class="form-control" placeholder="Insert key...">
+            <br>
+            <button type="submit" onclick="code()" class="btn btn-success">Encrypt</button>
+        </div>
+        <center>
+            <h4 class="display-4">OR</h4>
+        </center>
+        <div class="form-group">
+            <label for="exampleInputPassword1">Decrypt code</label>
+            <input type="text" id="output" class="form-control" placeholder="Decrypt something...">
+            <small class="form-text text-muted">Insert code like [[x,x,x],[y,y,y]...]</small><br>
+            <label>Insert key between 100-850</label>
+            <input type="number" id="keyout" class="form-control" placeholder="Insert key...">
+            <br>
+
+            <button type="submit" onclick="decode()" class="btn btn-danger">Decrypt</button>
+        </div>
+        <br>
+        <h4 class="display-4">Output:</h4>
+        <br>
+        <div id="color"></div>
+        <p id="exitin"></p>
+        <p id="exitout"></p>
+
+    </div>
+    <script src="code.js"></script>
+    <script src="decode.js"></script>
+    <script src="sketch.js"></script>
+
+</body>
+
+</html>

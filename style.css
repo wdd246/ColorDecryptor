@@ -1,0 +1,30 @@
+body,
+html,
+* {
+    margin: 0;
+    padding: 0;
+    color: black;
+    //font-family: monospace;
+    //font-size: 40px;
+    background-color: white;
+    //height: 100%;
+}
+
+input,
+button {
+    color: black;
+}
+
+.form-group {
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.display-4 {
+    text-decoration: underline;
+}
+
+#exitout {
+    font-size: 25px
+}
