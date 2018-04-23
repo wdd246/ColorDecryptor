@@ -17,10 +17,10 @@
         <br>
         <div class="form-group">
             <label>Encrypt some text</label>
-            <input type="text" id="input" class="form-control" placeholder="Encrypt something...">
+            <input type="text" id="input" class="form-control" placeholder="Encrypt something..." required>
             <small class="form-text text-muted">Insert some text ...</small><br>
-            <label>Insert key between 100-850</label>
-            <input type="number" id="keyin" class="form-control" placeholder="Insert key...">
+            <label>Insert key between 100-850 [default 100]</label>
+            <input type="number" id="keyin" class="form-control" placeholder="Insert key..." required>
             <br>
             <button type="submit" onclick="code()" class="btn btn-success">Encrypt</button>
         </div>
@@ -29,10 +29,10 @@
         </center>
         <div class="form-group">
             <label for="exampleInputPassword1">Decrypt code</label>
-            <input type="text" id="output" class="form-control" placeholder="Decrypt something...">
+            <input type="text" id="output" class="form-control" placeholder="Decrypt something..." required>
             <small class="form-text text-muted">Insert code like [[x,x,x],[y,y,y]...]</small><br>
-            <label>Insert key between 100-850</label>
-            <input type="number" id="keyout" class="form-control" placeholder="Insert key...">
+            <label>Insert key between 100-850 [default 100]</label>
+            <input type="number" id="keyout" class="form-control" placeholder="Insert key..." required>
             <br>
 
             <button type="submit" onclick="decode()" class="btn btn-danger">Decrypt</button>
